@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>블로그 만들기 전에 여쭤볼게요 | 조차장</title>
+<meta name="description" content="마음에 드는 블로그 느낌을 고르고, 질문 12가지에 아는 것만 답해 주세요.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="블로그 만들기 전에 여쭤볼게요">
+<meta property="og:description" content="느낌 고르기(따뜻한 그림체 · 실사 전문가형)와 질문 12가지. 아는 것만 답해 주세요, 5분이면 돼요.">
+<meta property="og:image" content="https://seperosjhg.github.io/blog-setup/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://seperosjhg.github.io/blog-setup/">
+<meta name="theme-color" content="#121729">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&family=Noto+Serif+KR:wght@700;900&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:#121729;color:#eef0f6;font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;line-height:1.55;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;padding-bottom:90px;overflow-x:hidden}
+img{max-width:100%;display:block}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+.kicker{display:inline-block;font-size:14px;font-weight:800;color:#1a1f36;background:#f2b84b;border-radius:999px;padding:5px 13px}
+.hero{padding:44px 0 6px}
+h1{font-size:clamp(32px,8.6vw,52px);font-weight:900;letter-spacing:-1.5px;line-height:1.22;margin-top:14px}
+h1 em,h2 em{font-style:normal;color:#f2b84b}
+.sub{font-size:17px;color:#c3c9db;margin-top:12px}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.jump a{font-size:15px;font-weight:800;color:#eef0f6;text-decoration:none;background:#1a2039;border:1px solid #2e3a6b;border-radius:999px;padding:9px 15px}
+.jump a b{color:#f2b84b;margin-right:6px}
+section{padding-top:56px}
+h2{font-size:clamp(25px,6.4vw,38px);font-weight:900;letter-spacing:-1px;line-height:1.28;margin-top:10px}
+.lead{font-size:16px;color:#b9c0d6;margin-top:8px}
+
+/* 대문 (공통) */
+.cover{position:relative;aspect-ratio:16/9;overflow:hidden;container-type:inline-size;background:#fffaf2}
+.cover>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover .ttl{position:absolute;left:6%;top:14%;z-index:2}
+.ca>img{object-position:72% 50%}
+.cb,.cc{background:#fff}
+.cb>img,.cc>img{object-position:62% 35%}
+.cb:after,.cc:after{content:'';position:absolute;inset:0;z-index:1}
+.cb:after{background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.9) 36%,rgba(255,255,255,0) 64%)}
+.cc:after{background:linear-gradient(90deg,rgba(255,250,242,.97) 0%,rgba(255,250,242,.9) 36%,rgba(255,250,242,0) 64%)}
+.doo{display:block;width:70px;width:17cqw;height:auto;margin:0 0 5px 2px}
+.ca .ttl b,.cc .ttl b{display:block;font-family:Jua,sans-serif;font-weight:400;font-size:44px;font-size:11.5cqw;color:#6b4f3a;line-height:1}
+.ca .ttl i,.cc .ttl i{display:block;font-style:normal;font-family:'Gowun Dodum',sans-serif;font-size:15px;font-size:3.9cqw;color:#8a6f5c;margin-top:9px;margin-top:2.2cqw;line-height:1.45}
+.cb .ttl small{display:block;font-size:12px;font-size:3cqw;font-weight:800;color:#b38726}
+.cb .ttl b{display:block;font-family:'Noto Serif KR',serif;font-weight:900;font-size:40px;font-size:10.2cqw;color:#1f2a44;line-height:1.12;margin-top:4px;margin-top:1cqw}
+.cb .ttl .bar{display:block;width:40px;width:10cqw;height:3px;height:.7cqw;background:#c9a24a;margin:10px 0 8px;margin:2.4cqw 0 2.1cqw}
+.cb .ttl span{display:block;font-size:14px;font-size:3.5cqw;font-weight:600;color:#33405f;line-height:1.4}
+.cb .ttl .ch{display:flex;gap:5px;gap:1.3cqw;margin-top:10px;margin-top:2.6cqw;flex-wrap:wrap}
+.cb .ttl .ch em{font-style:normal;font-size:10px;font-size:max(9px,2.5cqw);font-weight:800;color:#1f2a44;border:1.5px solid #1f2a44;border-radius:5px;padding:2px 6px;padding:.6cqw 1.5cqw;background:rgba(255,255,255,.75)}
+
+/* 느낌 고르기 카드 */
+.looks{display:grid;gap:16px;margin-top:20px}
+.look{background:#1a2039;border:1px solid #2b3459;border-radius:20px;overflow:hidden}
+.lab{display:flex;align-items:center;gap:10px;padding:13px 16px 15px;flex-wrap:wrap}
+.lab b{flex:0 0 36px;height:36px;border-radius:10px;background:#f2b84b;color:#1a1f36;font-size:19px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.lab strong{font-size:20px;font-weight:900}
+.lab span{font-size:15px;color:#b9c0d6}
+.lab a{margin-left:auto;font-size:14px;font-weight:800;color:#f2b84b;text-decoration:none}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:2px 16px 0}
+.mini div{position:relative}
+.mini img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.mini em{position:absolute;left:6px;top:6px;font-style:normal;font-size:12px;font-weight:800;color:#1a1f36;background:#f2b84b;border-radius:999px;padding:2px 8px}
+.minicap{font-size:14px;color:#b9c0d6;padding:10px 16px 16px}
+
+/* 블로그 첫 화면 미리보기 */
+.phone{max-width:430px;margin:22px auto 0;background:#05070f;border-radius:38px;padding:10px;box-shadow:0 20px 50px rgba(0,0,0,.5),inset 0 0 0 1.5px #2a3150}
+.blog{border-radius:30px;overflow:hidden}
+.blog .top{height:36px;display:flex;align-items:center;justify-content:center}
+.blog .top span{font-size:11px;border-radius:999px;padding:3px 12px}
+.prof{display:flex;align-items:flex-end;gap:12px;padding:0 18px;margin-top:-28px;position:relative;z-index:3}
+.phone .cb .ttl{top:8%}
+.prof img{width:78px;height:78px;border-radius:50%;object-fit:cover;flex:0 0 78px}
+.who b{display:block}
+.intro{padding:10px 18px 0}
+.btns{display:flex;gap:8px;padding:12px 18px 0;flex-wrap:wrap}
+.tabs{display:flex;flex-wrap:wrap;padding:16px 18px 0}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:14px 18px 0}
+.post img{width:100%;aspect-ratio:1;object-fit:cover}
+.post b{display:block}
+.cta{margin:18px 18px 22px;text-align:center;padding:12px}
+/* A */
+.ba{background:#fffaf2}
+.ba .top span{background:#f3e9da;color:#8a7766;font-family:'Gowun Dodum',sans-serif}
+.ba .prof img{border:4px solid #fffaf2;box-shadow:0 4px 12px rgba(107,79,58,.2);background:#fff}
+.ba .who b{font-family:Jua,sans-serif;font-weight:400;font-size:20px;color:#5d4535}
+.ba .who span{display:block;font-family:'Gowun Dodum',sans-serif;font-size:12.5px;color:#8a7766}
+.ba .intro{font-family:'Gowun Dodum',sans-serif;font-size:14px;color:#6f5d50}
+.ba .btns span{font-family:Jua,sans-serif;font-size:14px;padding:7px 16px;border-radius:999px;color:#fff}
+.ba .b1{background:#9cb89a}.ba .b2{background:#eda58c}
+.ba .tabs{gap:6px}
+.ba .tabs span{font-family:'Gowun Dodum',sans-serif;font-size:12px;color:#7a6556;background:#f3e6d4;border-radius:999px;padding:4px 10px}
+.ba .tabs span.on{background:#6b4f3a;color:#fff}
+.ba .post img{border-radius:14px}
+.ba .post .tag{font-family:Jua,sans-serif;font-size:11px;color:#fff;background:#e8a48a;border-radius:999px;padding:1px 8px;display:inline-block;margin-top:6px}
+.ba .post b{font-family:Jua,sans-serif;font-weight:400;font-size:13px;color:#5d4535;margin-top:3px;line-height:1.3}
+.ba .cta{font-family:Jua,sans-serif;font-size:16px;background:#6b4f3a;color:#fffaf2;border-radius:999px}
+/* B */
+.bb{background:#fff}
+.bb .top span{background:#f1f2f5;color:#6b7387}
+.bb .prof img{border:4px solid #fff;box-shadow:0 4px 12px rgba(31,42,68,.18);background:#fff}
+.bb .who b{font-size:17px;font-weight:800;color:#1f2a44}
+.bb .who span{display:block;font-size:12px;color:#6b7387}
+.bb .intro{font-size:13.5px;color:#3e475c}
+.bb .btns span{font-size:13.5px;font-weight:800;padding:7px 16px;border-radius:6px}
+.bb .b1{background:#1f2a44;color:#fff}.bb .b2{border:1.5px solid #1f2a44;color:#1f2a44}
+.bb .tabs{gap:6px 14px;border-bottom:1.5px solid #eceef3}
+.bb .tabs span{font-size:12.5px;font-weight:600;color:#7a8296;padding-bottom:8px}
+.bb .tabs span.on{color:#1f2a44;font-weight:800;border-bottom:3px solid #1f2a44}
+.bb .post img{border-radius:6px}
+.bb .post .tag{font-size:11px;font-weight:800;color:#b38726;margin-top:6px;display:block}
+.bb .post b{font-size:12.5px;font-weight:800;color:#1f2a44;margin-top:2px;line-height:1.35}
+.bb .cta{font-size:15px;font-weight:800;background:#1f2a44;color:#fff;border-radius:8px}
+
+/* 설명 상자 */
+.info{display:grid;gap:12px;margin-top:20px}
+.box{background:#1a2039;border:1px solid #2b3459;border-radius:18px;padding:16px 18px}
+.box h3{font-size:17px;font-weight:900;color:#f2b84b;margin-bottom:8px}
+.box ul{list-style:none}
+.box li{font-size:15.5px;padding-left:20px;position:relative;margin-top:3px}
+.box li:before{content:'';position:absolute;left:3px;top:10px;width:8px;height:8px;border-radius:50%;background:#f2b84b}
+.box p{font-size:14.5px;color:#c3c9db;margin-top:8px}
+.kw{display:flex;gap:8px;flex-wrap:wrap}
+.kw span{font-size:15px;font-weight:800;padding:5px 14px;border-radius:999px;background:#273058}
+
+/* 질문 */
+.qsec{margin-top:32px;font-size:21px;font-weight:900;color:#f2b84b;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.qsec small{font-size:14px;color:#9aa3bd;font-weight:700}
+.q{margin-top:12px;background:#1a2039;border:1px solid #2b3459;border-radius:18px;padding:16px 16px 18px}
+.qt{display:flex;gap:10px;align-items:flex-start;font-size:17px;font-weight:800;line-height:1.45}
+.qt b{flex:0 0 30px;height:30px;border-radius:50%;background:#f2b84b;color:#1a1f36;text-align:center;line-height:30px;font-size:15px;font-weight:900}
+.ind{margin-left:40px}
+.ex{font-size:14px;color:#9aa3bd;margin-top:6px}
+.lab2{font-size:14px;color:#c3c9db;font-weight:700;margin-top:14px}
+.in{display:block;width:100%;margin-top:10px;background:#121729;border:1.5px solid #3a4570;border-radius:10px;color:#eef0f6;font:inherit;font-size:16px;padding:10px 12px}
+textarea.in{min-height:76px;resize:vertical}
+.in::placeholder{color:#6f7896}
+.in:focus{outline:none;border-color:#f2b84b}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chips button{font:inherit;font-size:15px;font-weight:700;color:#e8ebf4;background:transparent;border:1.5px solid #3a4570;border-radius:10px;padding:8px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;-webkit-tap-highlight-color:transparent;text-align:left}
+.chips button:before{content:'';flex:0 0 16px;width:16px;height:16px;border:2px solid #f2b84b;border-radius:4px}
+.chips[data-multi="0"] button:before{border-radius:50%}
+.chips button[aria-pressed="true"]{background:#f2b84b;color:#1a1f36;border-color:#f2b84b}
+.chips button[aria-pressed="true"]:before{background:#1a1f36 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-6.5' fill='none' stroke='%23f2b84b' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat;border-color:#1a1f36}
+.prep{margin-top:28px;background:#f2b84b;color:#1a1f36;border-radius:20px;padding:18px 20px}
+.prep h3{font-size:20px;font-weight:900;margin-bottom:6px}
+.prep li{list-style:none;font-size:15.5px;padding-left:20px;position:relative;margin-top:7px;font-weight:600}
+.prep li:before{content:'';position:absolute;left:3px;top:9px;width:9px;height:9px;border-radius:2px;background:#1a1f36}
+.prep li b{font-weight:900}
+
+/* 답 보내기 */
+.send{background:#1a2039;border:1px solid #2b3459;border-radius:20px;padding:18px;margin-top:18px}
+.send label{font-size:15px;font-weight:800}
+.prog{font-size:16px;font-weight:800;margin-top:14px}
+.prog b{color:#f2b84b}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.btn{font:inherit;font-size:17px;font-weight:900;border:0;border-radius:12px;padding:14px 18px;cursor:pointer;flex:1 1 160px}
+.btn.pri{background:#f2b84b;color:#1a1f36}
+.btn.sec{background:#273058;color:#fff}
+#out{display:block;width:100%;min-height:250px;margin-top:12px;background:#121729;border:1.5px solid #3a4570;border-radius:10px;color:#dfe3ee;font:inherit;font-size:14px;line-height:1.6;padding:12px;resize:vertical}
+.tiny{font-size:13px;color:#8f97b0;margin-top:10px}
+.reset{background:none;border:0;color:#8f97b0;text-decoration:underline;font:inherit;font-size:13px;cursor:pointer;margin-top:4px}
+
+footer{margin-top:48px;padding:18px 0 34px;border-top:1px solid #232b4d}
+footer p{font-size:13px;color:#8f97b0}
+footer .brand{color:#f2b84b;font-weight:800;font-size:15px;margin-top:6px}
+
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(18,23,41,.96);border-top:1px solid #2b3459;padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px;justify-content:center}
+.dock span{font-size:14px;color:#c3c9db}
+.dock span b{color:#f2b84b}
+.dock a{font-size:15px;font-weight:900;color:#1a1f36;background:#f2b84b;border-radius:999px;padding:9px 18px;text-decoration:none;white-space:nowrap}
+.toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:#f2b84b;color:#1a1f36;font-weight:800;font-size:15px;padding:10px 16px;border-radius:14px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:60;width:max-content;max-width:90vw;text-align:center}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <span class="kicker">블로그 제작 사전 안내</span>
+  <h1>블로그 만들기 전에<br><em>여쭤볼게요</em></h1>
+  <p class="sub">마음에 드는 느낌을 고르고, 질문에 아는 것만 답해 주세요. 5분이면 돼요. 답을 미리 받으면 첫 만남 때 대문 시안을 바로 보여 드릴 수 있어요.</p>
+  <nav class="jump"><a href="#look"><b>1</b>느낌 고르기</a><a href="#qna"><b>2</b>질문 답하기</a><a href="#send"><b>3</b>답 보내기</a></nav>
+</header>
+
+<section id="look">
+  <span class="kicker">1단계</span>
+  <h2>블로그, <em>어떤 느낌</em>이 좋으세요?</h2>
+  <p class="lead">블로그 맨 위 그림(대문)만 봐도 첫인상이 달라져요. 마음에 드는 쪽을 골라 주세요.</p>
+  <div class="looks">
+    <div class="look">
+      <div class="cover ca"><img src="a-cover.jpg" alt="따뜻한 그림체 대문 예시" width="1200" height="670"><div class="ttl"><svg class="doo" viewBox="0 0 130 56" aria-hidden="true"><path d="M6 48 C40 42 72 28 112 8" stroke="#9cb89a" stroke-width="4" fill="none" stroke-linecap="round"/><ellipse cx="40" cy="36" rx="13" ry="6" transform="rotate(-25 40 36)" fill="#b9d0b4"/><ellipse cx="64" cy="26" rx="13" ry="6" transform="rotate(-35 64 26)" fill="#9cb89a"/><ellipse cx="88" cy="16" rx="12" ry="5.5" transform="rotate(-40 88 16)" fill="#b9d0b4"/><circle cx="118" cy="8" r="6" fill="#eda58c"/></svg><b>하루공간</b><i>마음이 쉬어 가는<br>동네 상담·배움 공간</i></div></div>
+      <div class="lab"><b>A</b><strong>따뜻한 그림체</strong><span>포근하고 친근하게</span><a href="#lookA">자세히 보기</a></div>
+    </div>
+    <div class="look">
+      <div class="cover cb"><img src="b-cover.jpg" alt="실사 전문가형 대문 예시" width="1200" height="670"><div class="ttl"><small>1:1 맞춤 상담</small><b>하루공간</b><i class="bar"></i><span>믿을 수 있는 전문가와<br>함께하는 상담</span><div class="ch"><em>경력 12년</em><em>전문 자격</em><em>예약제</em></div></div></div>
+      <div class="lab"><b>B</b><strong>실사 전문가형</strong><span>믿음 가고 깔끔하게</span><a href="#lookB">자세히 보기</a></div>
+    </div>
+    <div class="look">
+      <div class="cover cc"><img src="b-cover.jpg" alt="섞어서 만든 대문 예시" width="1200" height="670" loading="lazy"><div class="ttl"><svg class="doo" viewBox="0 0 130 56" aria-hidden="true"><path d="M6 48 C40 42 72 28 112 8" stroke="#9cb89a" stroke-width="4" fill="none" stroke-linecap="round"/><ellipse cx="40" cy="36" rx="13" ry="6" transform="rotate(-25 40 36)" fill="#b9d0b4"/><ellipse cx="64" cy="26" rx="13" ry="6" transform="rotate(-35 64 26)" fill="#9cb89a"/><ellipse cx="88" cy="16" rx="12" ry="5.5" transform="rotate(-40 88 16)" fill="#b9d0b4"/><circle cx="118" cy="8" r="6" fill="#eda58c"/></svg><b>하루공간</b><i>마음이 쉬어 가는<br>동네 상담·배움 공간</i></div></div>
+      <div class="lab"><b>C</b><strong>섞어서</strong><span>실제 사진 + 따뜻한 글씨·그림</span></div>
+      <div class="mini"><div><img src="a-t1.jpg" alt="" loading="lazy"><em>그림</em></div><div><img src="b-t2.jpg" alt="" loading="lazy"><em>사진</em></div><div><img src="a-t3.jpg" alt="" loading="lazy"><em>그림</em></div></div>
+      <p class="minicap">글 썸네일도 그림과 사진을 섞어 쓸 수 있어요.</p>
+    </div>
+  </div>
+</section>
+
+<section id="lookA">
+  <span class="kicker">느낌 A</span>
+  <h2><em>따뜻한 그림체</em></h2>
+  <p class="lead">포근하고 친근한 느낌이에요. 사진이 없어도 그림으로 채울 수 있어요.</p>
+  <div class="phone"><div class="blog ba">
+    <div class="top"><span>휴대폰으로 본 블로그 첫 화면</span></div>
+    <div class="cover ca"><img src="a-cover.jpg" alt="" width="1200" height="670" loading="lazy"><div class="ttl"><svg class="doo" viewBox="0 0 130 56" aria-hidden="true"><path d="M6 48 C40 42 72 28 112 8" stroke="#9cb89a" stroke-width="4" fill="none" stroke-linecap="round"/><ellipse cx="40" cy="36" rx="13" ry="6" transform="rotate(-25 40 36)" fill="#b9d0b4"/><ellipse cx="64" cy="26" rx="13" ry="6" transform="rotate(-35 64 26)" fill="#9cb89a"/><ellipse cx="88" cy="16" rx="12" ry="5.5" transform="rotate(-40 88 16)" fill="#b9d0b4"/><circle cx="118" cy="8" r="6" fill="#eda58c"/></svg><b>하루공간</b><i>마음이 쉬어 가는<br>동네 상담·배움 공간</i></div></div>
+    <div class="prof"><img src="a-prof.jpg" alt="" loading="lazy"><div class="who"><b>하루쌤</b><span>상담·배움 공간 운영 (예시)</span></div></div>
+    <p class="intro">지친 마음, 혼자 끙끙 앓지 마세요.<br>따뜻한 차 한잔과 함께 이야기 나눠요.</p>
+    <div class="btns"><span class="b1">이웃추가</span><span class="b2">편하게 문의하기</span></div>
+    <div class="tabs"><span class="on">전체글</span><span>공간 이야기</span><span>프로그램</span><span>오시는 길</span><span>후기</span></div>
+    <div class="posts">
+      <div class="post"><img src="a-t1.jpg" alt="" loading="lazy"><span class="tag">첫 방문</span><b>첫 상담은 이렇게 진행돼요</b></div>
+      <div class="post"><img src="a-t2.jpg" alt="" loading="lazy"><span class="tag">오시는 길</span><b>골목 끝 나무 문을 찾아 주세요</b></div>
+      <div class="post"><img src="a-t3.jpg" alt="" loading="lazy"><span class="tag">후기</span><b>다녀가신 분들의 이야기</b></div>
+    </div>
+    <div class="cta">차 한잔하러 오세요 · 예약 문의</div>
+  </div></div>
+  <div class="info">
+    <div class="box"><h3>이런 느낌이에요</h3><div class="kw"><span>포근함</span><span>친근함</span><span>편안함</span></div></div>
+    <div class="box"><h3>이런 곳에 잘 어울려요</h3><ul><li>상담·심리, 아이·교육</li><li>반려동물, 공방·카페</li><li>동네 가게, 모임·커뮤니티</li></ul></div>
+    <div class="box"><h3>준비해 주시면 좋아요</h3><ul><li>좋아하는 색 1~2가지 (로고 색이 있으면 그 색)</li><li>로고 (있으면)</li><li>공간 사진 몇 장 (그림을 그릴 때 참고해요)</li></ul></div>
+  </div>
+</section>
+
+<section id="lookB">
+  <span class="kicker">느낌 B</span>
+  <h2><em>실사 전문가형</em></h2>
+  <p class="lead">실제 사진으로 믿음을 주는 느낌이에요. 대표님 얼굴과 공간이 그대로 보여요.</p>
+  <div class="phone"><div class="blog bb">
+    <div class="top"><span>휴대폰으로 본 블로그 첫 화면</span></div>
+    <div class="cover cb"><img src="b-cover.jpg" alt="" width="1200" height="670" loading="lazy"><div class="ttl"><small>1:1 맞춤 상담</small><b>하루공간</b><i class="bar"></i><span>믿을 수 있는 전문가와<br>함께하는 상담</span><div class="ch"><em>경력 12년</em><em>전문 자격</em><em>예약제</em></div></div></div>
+    <div class="prof"><img src="b-prof.jpg" alt="" loading="lazy"><div class="who"><b>하루공간 대표</b><span>상담 전문가 (예시)</span></div></div>
+    <p class="intro">아이와 가족의 고민, 검증된 방법으로<br>함께 차근차근 풀어 갑니다.</p>
+    <div class="btns"><span class="b1">상담 예약</span><span class="b2">이웃추가</span></div>
+    <div class="tabs"><span class="on">전체글</span><span>상담 안내</span><span>프로그램</span><span>후기</span><span>오시는 길</span></div>
+    <div class="posts">
+      <div class="post"><img src="b-t1.jpg" alt="" loading="lazy"><span class="tag">상담 안내</span><b>첫 상담 진행 순서 3단계</b></div>
+      <div class="post"><img src="b-t2.jpg" alt="" loading="lazy"><span class="tag">공간 소개</span><b>편안한 상담실을 소개합니다</b></div>
+      <div class="post"><img src="b-t3.jpg" alt="" loading="lazy"><span class="tag">오시는 길</span><b>1층 입구 · 주차 안내</b></div>
+    </div>
+    <div class="cta">상담 예약하기</div>
+  </div></div>
+  <div class="info">
+    <div class="box"><h3>이런 느낌이에요</h3><div class="kw"><span>신뢰</span><span>전문성</span><span>깔끔함</span></div></div>
+    <div class="box"><h3>이런 곳에 잘 어울려요</h3><ul><li>학원, 병원·한의원</li><li>세무·법률·부동산, 컨설팅</li><li>피부·미용, 전문 서비스</li></ul></div>
+    <div class="box"><h3>준비해 주시면 좋아요</h3><ul><li>대표님 사진 1~3장 (밝은 곳에서 정면)</li><li>공간·일하는 모습 사진 5~10장 (휴대폰도 OK)</li><li>자격증·경력 중 공개해도 되는 것</li></ul><p>사진이 부족하면 찍는 요령을 알려 드리거나 C(섞어서)로 할 수 있어요.</p></div>
+  </div>
+</section>
+
+<section id="qna">
+  <span class="kicker">2단계</span>
+  <h2>질문 12가지에 <em>답해 주세요</em></h2>
+  <p class="lead">아는 것만 편하게 답해 주세요. 없어도 괜찮아요. 누르거나 적은 답은 이 휴대폰에만 저장돼요.</p>
+
+  <div class="qsec">먼저 간단히</div>
+  <div class="q"><div class="qt"><b>1</b><span>블로그 이름으로 쓸 상호와, 하시는 일을 한 줄로 알려 주세요.</span></div>
+    <div class="ind"><input class="in" data-k="q1" placeholder="예) 하루공간 · 아이와 부모 심리 상담"></div></div>
+  <div class="q"><div class="qt"><b>2</b><span>블로그를 보고 연락했으면 하는 손님은 누구인가요?</span></div>
+    <div class="ind"><input class="in" data-k="q2" placeholder="예) 초등 학부모, 30~40대 직장인">
+    <p class="lab2">손님이 블로그를 보고 무엇을 하면 좋을까요?</p>
+    <div class="chips" data-k="q2act" data-multi="1"><button type="button">전화</button><button type="button">카톡 문의</button><button type="button">예약</button><button type="button">직접 방문</button></div></div></div>
+  <div class="q"><div class="qt"><b>3</b><span>블로그와 글쓰기는 어떻게 할까요?</span></div>
+    <div class="ind"><div class="chips" data-k="q3blog" data-multi="0"><button type="button">블로그 새로 만들기</button><button type="button">이미 있어요</button></div>
+    <input class="in" data-k="q3url" placeholder="이미 있다면 블로그 주소">
+    <p class="lab2">글은 앞으로</p>
+    <div class="chips" data-k="q3write" data-multi="0"><button type="button">직접 쓸게요</button><button type="button">AI 자동 글쓰기도 원해요</button></div></div></div>
+
+  <div class="qsec">① 전체 느낌 <small>위 샘플을 보고 골라 주세요</small></div>
+  <div class="q"><div class="qt"><b>4</b><span>마음에 드는 느낌은 어느 쪽인가요?</span></div>
+    <div class="ind"><div class="chips" data-k="q4look" data-multi="0"><button type="button">A 따뜻한 그림체</button><button type="button">B 실사 전문가형</button><button type="button">C 섞어서</button><button type="button">추천해 주세요</button></div>
+    <p class="lab2">글 말투는</p>
+    <div class="chips" data-k="q4tone" data-multi="0"><button type="button">친근하게</button><button type="button">단정하게 (격식 있게)</button></div></div></div>
+  <div class="q"><div class="qt"><b>5</b><span>좋아하는 색, 피하고 싶은 색, 닮고 싶은 곳이 있나요?</span></div>
+    <div class="ind"><p class="ex">로고나 간판 색이 있으면 그 색에 맞춰요. 마음에 드는 블로그·가게·인스타가 있으면 1~2곳 알려 주세요.</p>
+    <textarea class="in" data-k="q5" placeholder="예) 연두색이 좋아요, 빨간색은 싫어요 / 참고: 블로그 주소"></textarea></div></div>
+
+  <div class="qsec">② 주실 수 있는 자료 <small>있는 것만 골라 주세요</small></div>
+  <div class="q"><div class="qt"><b>6</b><span>로고와 대표님 사진</span></div>
+    <div class="ind"><div class="chips" data-k="q6logo" data-multi="0"><button type="button">로고 파일 있어요</button><button type="button">로고 없어요</button></div>
+    <p class="lab2">대표님 얼굴은</p>
+    <div class="chips" data-k="q6face" data-multi="0"><button type="button">공개해도 괜찮아요</button><button type="button">뒷모습·손만</button><button type="button">사진 없이</button></div></div></div>
+  <div class="q"><div class="qt"><b>7</b><span>블로그에 쓸 사진이 있나요?</span></div>
+    <div class="ind"><p class="ex">휴대폰 사진도 좋아요. 5~10장이면 충분해요.</p>
+    <div class="chips" data-k="q7" data-multi="1"><button type="button">공간·매장</button><button type="button">일하는 모습</button><button type="button">제품·결과물</button><button type="button">손님 후기 (동의 받은 것)</button><button type="button">아직 없어요</button></div></div></div>
+  <div class="q"><div class="qt"><b>8</b><span>소개 자료가 있나요?</span></div>
+    <div class="ind"><div class="chips" data-k="q8" data-multi="1"><button type="button">명함·전단지</button><button type="button">메뉴·가격표</button><button type="button">홈페이지·인스타</button><button type="button">자격증·경력 (공개 가능한 것)</button><button type="button">없어요</button></div></div></div>
+  <div class="q"><div class="qt"><b>9</b><span>블로그에 공개해도 되는 정보를 골라 주세요.</span></div>
+    <div class="ind"><div class="chips" data-k="q9" data-multi="1"><button type="button">전화번호</button><button type="button">주소·지도</button><button type="button">영업시간</button><button type="button">주차 안내</button><button type="button">카톡 채널</button></div></div></div>
+
+  <div class="qsec">③ 특별히 신경 써 주셨으면 하는 것</div>
+  <div class="q"><div class="qt"><b>10</b><span>꼭 알리고 싶은 점 3가지</span></div>
+    <div class="ind"><p class="ex">다른 곳과 다른 점, 손님이 자주 묻는 것</p>
+    <input class="in" data-k="q10a" placeholder="첫째"><input class="in" data-k="q10b" placeholder="둘째"><input class="in" data-k="q10c" placeholder="셋째"></div></div>
+  <div class="q"><div class="qt"><b>11</b><span>블로그에 넣으면 안 되는 것이나 조심할 표현이 있나요?</span></div>
+    <div class="ind"><textarea class="in" data-k="q11" placeholder="예) 가격 공개, 아이 얼굴, 과장된 표현"></textarea></div></div>
+  <div class="q"><div class="qt"><b>12</b><span>언제까지 필요하세요?</span></div>
+    <div class="ind"><input class="in" data-k="q12" placeholder="예) 12월 첫째 주 오픈 전까지"></div></div>
+
+  <div class="prep"><h3>세팅하는 날 준비물</h3><ul>
+    <li><b>네이버 아이디</b> 당일 대표님이 직접 로그인해 주세요. 비밀번호는 알려 주지 않으셔도 돼요.</li>
+    <li><b>본인 휴대폰</b> 인증 문자를 받아야 해요.</li>
+    <li><b>사진·로고는 미리 카톡으로</b> '원본'으로 보내 주시면 대문을 먼저 만들어 갈게요.</li>
+    <li><b>AI 자동 글쓰기를 원하시면</b> 노트북과 본인 명의 결제 카드 (AI 월 구독)</li>
+  </ul></div>
+</section>
+
+<section id="send">
+  <span class="kicker">3단계</span>
+  <h2>답 <em>보내기</em></h2>
+  <p class="lead">버튼을 누르면 답이 한 번에 정리돼요. 카톡 대화창에 붙여 넣어 보내 주세요.</p>
+  <div class="send">
+    <label for="nm">보내는 분 성함 (선택)</label>
+    <input class="in" id="nm" data-k="name" placeholder="예) 홍길동">
+    <p class="prog">12개 중 <b data-cnt>0</b>개 답했어요</p>
+    <div class="btnrow"><button type="button" class="btn pri" id="bCopy">답 복사하기</button><button type="button" class="btn sec" id="bShare" hidden>카톡 등으로 보내기</button></div>
+    <textarea id="out" readonly aria-label="정리된 답"></textarea>
+    <p class="tiny">답은 이 휴대폰에만 저장되고, 어디로도 자동으로 보내지지 않아요.</p>
+    <button type="button" class="reset" id="bReset">적은 답 모두 지우기</button>
+  </div>
+</section>
+
+<footer>
+  <p>※ 이 페이지의 그림과 사진은 설명을 위해 AI로 만든 예시예요. 실제 블로그는 대표님 업종과 자료에 맞춰 새로 만들어요.</p>
+  <p class="brand">조차장 · 블로그+스레드 홍보 세팅</p>
+</footer>
+</div>
+
+<div class="dock"><span>답한 질문 <b data-cnt>0</b>/12</span><a href="#send">답 보내기</a></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  var KEY = 'blogSetupAnswers_v1';
+  var S = {};
+  try { S = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { S = {}; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+  function val(k) {
+    var x = S[k];
+    if (Array.isArray(x)) return x.join(', ');
+    return String(x || '').trim().replace(/\s*\n\s*/g, ' / ');
+  }
+  var groups = document.querySelectorAll('.chips[data-k]');
+  Array.prototype.forEach.call(groups, function (g) {
+    var k = g.getAttribute('data-k'), multi = g.getAttribute('data-multi') === '1';
+    var btns = g.querySelectorAll('button');
+    function label(b) { return b.textContent.replace(/\s+/g, ' ').trim(); }
+    function sync() {
+      Array.prototype.forEach.call(btns, function (b) {
+        var v = label(b), on = multi ? (Array.isArray(S[k]) && S[k].indexOf(v) >= 0) : S[k] === v;
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+    }
+    Array.prototype.forEach.call(btns, function (b) {
+      b.addEventListener('click', function () {
+        var v = label(b);
+        if (multi) {
+          var a = Array.isArray(S[k]) ? S[k].slice() : [];
+          var i = a.indexOf(v);
+          if (i >= 0) a.splice(i, 1); else a.push(v);
+          S[k] = a;
+        } else {
+          S[k] = S[k] === v ? '' : v;
+        }
+        sync(); changed();
+      });
+    });
+    sync();
+  });
+  var fields = document.querySelectorAll('input[data-k], textarea[data-k]');
+  Array.prototype.forEach.call(fields, function (el) {
+    var k = el.getAttribute('data-k');
+    if (S[k]) el.value = S[k];
+    el.addEventListener('input', function () { S[k] = el.value; changed(); });
+  });
+  var QK = [['q1'], ['q2', 'q2act'], ['q3blog', 'q3url', 'q3write'], ['q4look', 'q4tone'], ['q5'], ['q6logo', 'q6face'], ['q7'], ['q8'], ['q9'], ['q10a', 'q10b', 'q10c'], ['q11'], ['q12']];
+  function d(x) { return x || '-'; }
+  function compose() {
+    var L = ['[블로그 제작 사전 질문 답변]'];
+    if (val('name')) L.push('보내는 분: ' + val('name'));
+    L.push('1. 상호·하는 일: ' + d(val('q1')));
+    L.push('2. 손님: ' + d(val('q2')) + ' / 원하는 행동: ' + d(val('q2act')));
+    L.push('3. 블로그: ' + d(val('q3blog')) + (val('q3url') ? ' (' + val('q3url') + ')' : '') + ' / 글: ' + d(val('q3write')));
+    L.push('4. 느낌: ' + d(val('q4look')) + ' / 말투: ' + d(val('q4tone')));
+    L.push('5. 색·참고: ' + d(val('q5')));
+    L.push('6. 로고: ' + d(val('q6logo')) + ' / 대표님 얼굴: ' + d(val('q6face')));
+    L.push('7. 사진: ' + d(val('q7')));
+    L.push('8. 소개 자료: ' + d(val('q8')));
+    L.push('9. 공개해도 되는 정보: ' + d(val('q9')));
+    L.push('10. 꼭 알리고 싶은 점: ① ' + d(val('q10a')) + ' ② ' + d(val('q10b')) + ' ③ ' + d(val('q10c')));
+    L.push('11. 넣으면 안 되는 것: ' + d(val('q11')));
+    L.push('12. 필요한 날짜: ' + d(val('q12')));
+    return L.join('\n');
+  }
+  var out = document.getElementById('out');
+  var cnts = document.querySelectorAll('[data-cnt]');
+  function changed() {
+    save();
+    out.value = compose();
+    var n = QK.filter(function (ks) { return ks.some(function (k) { return val(k); }); }).length;
+    Array.prototype.forEach.call(cnts, function (e) { e.textContent = n; });
+  }
+  var toastEl = document.getElementById('toast'), tt = null;
+  function toast(m) { toastEl.textContent = m; toastEl.classList.add('on'); clearTimeout(tt); tt = setTimeout(function () { toastEl.classList.remove('on'); }, 3200); }
+  function fallbackCopy(t) {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = t; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.top = '-1000px'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.focus(); ta.select(); ta.setSelectionRange(0, ta.value.length);
+      var ok = document.execCommand('copy'); document.body.removeChild(ta); return ok;
+    } catch (e) { return false; }
+  }
+  document.getElementById('bCopy').addEventListener('click', function () {
+    var t = compose();
+    function done(ok) {
+      if (ok) toast('답을 복사했어요. 카톡 대화창에 붙여 넣어 보내 주세요.');
+      else { toast('복사가 안 됐어요. 아래 글을 길게 눌러 복사해 주세요.'); out.focus(); out.select(); }
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(t).then(function () { done(true); }, function () { done(fallbackCopy(t)); });
+    } else { done(fallbackCopy(t)); }
+  });
+  var bShare = document.getElementById('bShare');
+  if (navigator.share) {
+    bShare.hidden = false;
+    bShare.addEventListener('click', function () { navigator.share({ title: '블로그 제작 사전 질문 답변', text: compose() }).catch(function () {}); });
+  }
+  document.getElementById('bReset').addEventListener('click', function () {
+    if (!confirm('적은 답을 모두 지울까요?')) return;
+    S = {}; save(); location.reload();
+  });
+  changed();
+})();
+</script>
+</body>
+</html>
